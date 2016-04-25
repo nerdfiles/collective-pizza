@@ -1,0 +1,15 @@
+{
+  "name": "collective-pizza",
+  "version": "0.0.1",
+  "description": "Co-working space dispatch for Pizza Delivery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pizza",
+    "request-response"
+  ],
+  "author": "Chicon Collective",
+  "license": "MIT"
+}
