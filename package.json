@@ -11,5 +11,9 @@
     "request-response"
   ],
   "author": "Chicon Collective",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "grunt copy",
+    "start": "node server/www.js"
+  }
 }
