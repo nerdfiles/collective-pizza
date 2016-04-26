@@ -21,3 +21,7 @@ app.use(express.static(__dirname + '/order'));
 app.get('/', function(req,res) {
   res.render('index');
 });
+
+app.post('api/v1/order', function order (req, res, next) {
+  res.send();
+}
