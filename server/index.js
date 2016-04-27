@@ -8,7 +8,8 @@ var
 express = require('express'),
 http = require('http'),
 app = express(),
-server = http.createServer(app);
+server = http.createServer(app),
+request = require('request');
 
 /// Config
 server.listen(3000);
@@ -23,5 +24,12 @@ app.get('/', function(req,res) {
 });
 
 app.post('api/v1/order', function order (req, res, next) {
+  var messagePayload = {};
+  // post to Trello with Cards as Members, use HD key for registration
+  var messageConstruct = request({
+    url: 'trello.getCardListByIdForBoard',
+    method: 'POST',
+    data: messagePayload
+  });
   res.send();
 }
